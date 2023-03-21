@@ -53,7 +53,7 @@ Control flow is an ordering on program elements that dictates the order in which
 The control flow of a program is captured by a control flow graph that has labelled directed edges between nodes that capture the order and conditions for the flow to occur.
 
 When CodeQL extracts code, it will create an abstract syntax tree (AST), and based on the AST it will create a control flow graph (CFG) to capture the order of execution.
-The CodeQL standard library for Java computes an expression-level intra-procedural CFG and exposes the CFG via the class `ControlFlowNode` and the successor relation `getASuccessor`.
+The CodeQL standard library for C/C++ computes an expression-level intra-procedural CFG and exposes the CFG via the class `ControlFlowNode` and the successor relation `getASuccessor`.
 This means that the CFG has edges between expressions, statements, and methods.
 An important goal of the computed CFG is to accurately capture the order of side-effects in a program.
 
