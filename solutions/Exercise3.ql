@@ -1,6 +1,6 @@
 /**
  * @id cpp/control-flow-graph
- * @kind graph
+ * @kind path-problem
  */
 
 import cpp
